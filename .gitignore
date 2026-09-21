@@ -1,0 +1,27 @@
+# Archivos compilados de Java
+/bin/
+*.class
+
+# Directorios de compilación de Maven y Gradle
+/target/
+/build/
+/.gradle/
+
+# Estado local del workspace de Eclipse
+.metadata/
+.recommenders/
+
+# Archivos temporales y registros
+*.log
+*.tmp
+*.swp
+*~
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configuración local de herramientas de asistencia
+/.codex/
+/.agents/
