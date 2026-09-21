@@ -17,4 +17,6 @@ class Quest01Test {
         String input = "ABBAC";
         assertEquals(5, Quest01.part1(input));
     }
+    
+    
 }
