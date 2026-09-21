@@ -18,5 +18,11 @@ class Quest01Test {
         assertEquals(5, Quest01.part1(input));
     }
     
+    @Test
+    void part1_sample_AxBCDDCAxD_returns_28() {
+        String input = "AxBCDDCAxD";
+        assertEquals(28, Quest01.part2(input));
+    }
+    
     
 }
