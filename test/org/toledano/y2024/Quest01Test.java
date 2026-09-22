@@ -24,4 +24,10 @@ class Quest01Test {
         assertEquals(28, Quest01.part2(input));
     }
 
+    @Test
+    void part3_calculates_correct_number_of_potions() {
+        String input = "xBxAAABCDxCC";
+        assertEquals(30, Quest01.part3(input));
+    }
+
 }

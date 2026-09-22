@@ -8,6 +8,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		solve(2024, 1, 1, org.toledano.y2024.Quest01::part1);
 		solve(2024, 1, 2, org.toledano.y2024.Quest01::part2);
+		solve(2024, 1, 3, org.toledano.y2024.Quest01::part3);
 	}
 
 	private static void solve(

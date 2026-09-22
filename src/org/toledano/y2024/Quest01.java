@@ -26,6 +26,27 @@ public class Quest01 {
 		return sumOfPotions;
 	}
 
+	public static int part3(String input) {
+		int sumOfPotions = 0;
+
+		for (int i = 0; i < input.length(); i += 3) {
+			int monsterCount = 0;
+
+			for (int a = 0; a <= 2; a++) {
+				sumOfPotions += numberOfPotions(input.charAt(i + a));
+				monsterCount += input.charAt(i + a) != 'x' ? 1 : 0;
+			}
+
+			sumOfPotions += switch (monsterCount) {
+				case 3 -> 6;
+				case 2 -> 2;
+				default -> 0;
+			};
+		}
+
+		return sumOfPotions;
+	}
+
 	static int numberOfPotions(char c) {
 		return switch (c) {
 			case 'B' -> 1;
