@@ -25,3 +25,6 @@ Desktop.ini
 # Configuración local de herramientas de asistencia
 /.codex/
 /.agents/
+
+# Configuración local de VS Code
+/.vscode/
