@@ -12,16 +12,15 @@ public class Quest02 {
             .filter(line -> !line.isBlank())
             .collect(Collectors.toList());
         var words = nonEmptyInput.get(0).substring("WORDS:".length()).split(",");
-        var runicWords = nonEmptyInput.get(1).split(" ");
+        var runicWords = nonEmptyInput.get(1);
 
-        for (var word :runicWords) {
-            for (var w : words) {
-                if (word.contains(w)) {
-                    runicWordsCount++;
-                }
+        for (var word :  words) {
+            int index = 0;
+            while ((index = runicWords.indexOf(word, index)) != -1) {
+                runicWordsCount++;
+                index++;
             }
         }
-        
         
         return runicWordsCount;
     }
