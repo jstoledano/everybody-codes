@@ -8,7 +8,9 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		solve(2024, 1, 1, org.toledano.y2024.Quest01::part1);
 		solve(2024, 1, 2, org.toledano.y2024.Quest01::part2);
-		solve(2024, 1, 3, org.toledano.y2024.Quest01::part3);
+                solve(2024, 1, 3, org.toledano.y2024.Quest01::part3);
+
+                solve(2024, 2, 1, org.toledano.y2024.Quest02::part1);
 	}
 
 	private static void solve(
@@ -18,7 +20,7 @@ public class Main {
 			java.util.function.ToIntFunction<String> solution) throws IOException {
 		Path notesPath = Path.of(
 				"resources/y%d/quest%02d/part%d.txt"
-						.formatted(year, quest, part));
+                                .formatted(year, quest, part));
 
 		String notes = Files.readString(notesPath).strip();
 		int result = solution.applyAsInt(notes);
